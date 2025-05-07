@@ -1,0 +1,11 @@
+#TEST
+import random
+test_image = random.choice(images)
+image = np.reshape(test_image, (-1, 1))
+hidden_raw = bias_input_to_hidden + weights_input_to_hidden @ image
+hidden = 1 / (1 + np.exp(-hidden_raw))
+output_raw = bias_hidden_to_output + weights_hidden_to_output @ hidden
+output = 1 / (1 + np.exp(-output_raw))
+plt.imshow(test_image.reshape(28, 28), cmap="Greys")
+plt.title(f"AI think this is: {output.argmax()}")
+plt.show()
