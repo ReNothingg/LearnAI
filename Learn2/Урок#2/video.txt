@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=S-kg8eVPXRQ&list=PL0lO_mIqDDFUAQ2RdAgLp6Tj_fREcxk6T&index=2
+Изучение Python OpenCV / Урок #2 – Работа с изображениями и видео
+
+pip install numpy
